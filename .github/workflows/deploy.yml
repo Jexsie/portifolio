@@ -50,12 +50,12 @@ jobs:
         run: npm run build
 
       - name: Add .nojekyll file
-        run: cd ./out && touch .nojekyll
+        run: touch /out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: /out
 
   deploy:
     environment:
