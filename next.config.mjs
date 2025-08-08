@@ -5,9 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Configure for GitHub Pages
-  basePath: process.env.NODE_ENV === "production" ? "/portfolio" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/portfolio/" : "",
   eslint: {
     ignoreDuringBuilds: true,
   },
