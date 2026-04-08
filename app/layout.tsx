@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import ExternalScripts from "./ExternalScripts";
 
 export const metadata: Metadata = {
   title: "Jessy Ssebuliba - Frontend Developer & Web3 Engineer",
@@ -27,17 +28,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="no-js ss-preload">
+    <html lang="en" className="no-js ss-preload" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <link rel="stylesheet" href="/css/vendor.css" />
         <link rel="stylesheet" href="/css/styles.css" />
       </head>
-      <body id="top">
+      <body id="top" suppressHydrationWarning>
         {children}
-        {/* Java Script */}
-        <script src="/js/plugins.js" defer></script>
-        <script src="/js/main.js" defer></script>
+        <ExternalScripts />
       </body>
     </html>
   );

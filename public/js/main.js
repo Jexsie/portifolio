@@ -78,7 +78,7 @@
     const preloader = document.querySelector("#preloader");
     if (!preloader) return;
 
-    window.addEventListener("load", function () {
+    function handleLoaded() {
       document.querySelector("html").classList.remove("ss-preload");
       document.querySelector("html").classList.add("ss-loaded");
 
@@ -87,7 +87,15 @@
       });
 
       tl.play();
-    });
+    }
+
+    window.addEventListener("load", handleLoaded);
+
+    // If the load event already fired (e.g., scripts loaded dynamically),
+    // run immediately
+    if (document.readyState === "complete") {
+      handleLoaded();
+    }
 
     // force page scroll position to top at page refresh
     // window.addEventListener('beforeunload' , function () {

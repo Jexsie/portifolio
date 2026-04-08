@@ -1,6 +1,9 @@
 node_modules
+out
 .next
 .env
 .DS_Store
 .env.local
 .env.production
+
+next-env.d.ts
