@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[12975,["/_next/static/chunks/0zbfabadhrea7.js"],"ViewportBoundary"]
+3:I[12975,["/_next/static/chunks/0zbfabadhrea7.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[33127,["/_next/static/chunks/0zbfabadhrea7.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Jessy Ssebuliba - Frontend Developer & Web3 Engineer"}],["$","meta","1",{"name":"description","content":"Jessy portfolio"}],["$","link","2",{"rel":"manifest","href":"/site.webmanifest"}],["$","link","3",{"rel":"canonical","href":"https://jexsie.com/"}],["$","link","4",{"rel":"icon","href":"/favicon-32x32.png","sizes":"32x32","type":"image/png"}],["$","link","5",{"rel":"icon","href":"/favicon-16x16.png","sizes":"16x16","type":"image/png"}],["$","link","6",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L5","7",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mLAVR-YDxfqw4R51Cra4h"}

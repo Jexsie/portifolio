@@ -1,0 +1,4 @@
+:HL["/css/vendor.css","style"]
+:HL["/css/styles.css","style"]
+:HL["images/about-photo.jpg","image",{"imageSrcSet":"images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"mLAVR-YDxfqw4R51Cra4h"}
