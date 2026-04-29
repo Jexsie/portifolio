@@ -2713,9 +2713,9 @@ img.u-pull-left {
  * ## MailtoUI style overrides
  * ------------------------------------------------------------------- */
 .mailtoui-modal {
-  --mailtoui-modal-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08),
-    0 2px 2px rgba(0, 0, 0, 0.08), 0 4px 4px rgba(0, 0, 0, 0.08),
-    0 8px 8px rgba(0, 0, 0, 0.08);
+  --mailtoui-modal-box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.08),
+    0 4px 4px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.08);
   --mailtoui-modal-head-bgcolor: var(--color-gray-18);
   --mailtoui-modal-head-title-color: white;
   --mailtoui-modal-body-bgcolor: var(--color-gray-11);
@@ -2939,7 +2939,8 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 
 .s-header {
-  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06),
+  --box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06),
     0 4px 4px rgba(0, 0, 0, 0.06), 0 8px 8px rgba(0, 0, 0, 0.06);
   z-index: 100;
   width: 100%;
@@ -3427,7 +3428,7 @@ img.u-pull-left {
 
 .about-info__text {
   padding: var(--vspace-3_5) 10vw var(--vspace-2) 0;
-  margin-left: -4rem;
+  margin-left: 2rem;
 }
 
 .about-info__text .text-pretitle {
@@ -3669,7 +3670,9 @@ img.u-pull-left {
 
 .folio-list__item-pic::before,
 .folio-list__item-pic::after {
-  transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    all,
+    0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .folio-list__item-pic::before {
@@ -3711,7 +3714,9 @@ img.u-pull-left {
 .folio-list__item-text::before,
 .folio-list__item-title,
 .folio-list__item-cat {
-  transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    all,
+    0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .folio-list__item-text {

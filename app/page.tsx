@@ -37,7 +37,7 @@ export default function Home() {
             <nav className="column lg-12 main-nav">
               <ul>
                 <li>
-                  <a href="index.html" className="home-link">
+                  <a href="#intro" className="home-link">
                     JEXSIE.
                   </a>
                 </li>
@@ -145,8 +145,8 @@ export default function Home() {
                     spans healthcare technology, decentralized asset
                     tokenization, and NFT interoperability, with notable
                     contributions to OpenMRS as a two-time Google Summer of Code
-                    developer and to Eclipse Adoptium, and I am currently focused
-                    on Hiero ledger solutions.
+                    developer and to Eclipse Adoptium, and I am currently
+                    focused on Hiero ledger solutions.
                   </p>
                   <a
                     href="#0"
@@ -278,10 +278,10 @@ export default function Home() {
                     <a href="https://github.com/jexsie">GitHub</a>
                   </li>
                   <li>
-                    <a href="https://linkedin.com/in/ssebuliba">LinkedIn</a>
+                    <a href="https://linkedin.com/in/jexsie">LinkedIn</a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/amjexsie">Twitter</a>
+                    <a href="https://x.com/amjexsie">X</a>
                   </li>
                   <li>
                     <a href="https://instagram.com/amjexsie">Instagram</a>
@@ -308,7 +308,7 @@ export default function Home() {
         <footer className="s-footer">
           <div className="row">
             <div className="column ss-copyright">
-              <span>© Copyright Jessy Ssebuliba 2025</span>
+              <span>© Copyright Jessy Ssebuliba 2026</span>
             </div>
 
             <div className="ss-go-top">
