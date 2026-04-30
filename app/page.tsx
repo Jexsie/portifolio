@@ -152,7 +152,8 @@ export default function Home() {
                     focused on Hiero ledger solutions.
                   </p>
                   <a
-                    href="#0"
+                    href="/jessy-ssebuliba-resume.pdf"
+                    download
                     className="btn btn--medium u-fullwidth"
                     data-animate-el
                   >
