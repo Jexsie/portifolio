@@ -57,6 +57,9 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
+                  <a href="/posts">Posts</a>
+                </li>
+                <li>
                   <a href="#contact" className="smoothscroll">
                     Say Hello
                   </a>
@@ -308,7 +311,9 @@ export default function Home() {
         <footer className="s-footer">
           <div className="row">
             <div className="column ss-copyright">
-              <span>© Copyright Jessy Ssebuliba 2026</span>
+              <span>
+                © Copyright Jessy Ssebuliba {new Date().getFullYear()}
+              </span>
             </div>
 
             <div className="ss-go-top">
