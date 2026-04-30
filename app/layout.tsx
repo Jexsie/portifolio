@@ -33,6 +33,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <link rel="stylesheet" href="/css/vendor.css" />
         <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/css/hljs-theme.css" />
       </head>
       <body id="top" suppressHydrationWarning>
         {children}

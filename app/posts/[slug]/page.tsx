@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { remark } from "remark";
-import html from "remark-html";
+import remarkRehype from "remark-rehype";
+import rehypeHighlight from "rehype-highlight";
+import rehypeStringify from "rehype-stringify";
 import { getPostBySlug, getAllPostSlugs } from "@/lib/posts";
 
 interface PostPageProps {
@@ -50,7 +52,11 @@ export default async function PostPage({ params }: PostPageProps) {
     notFound();
   }
 
-  const processedContent = await remark().use(html).process(post.content);
+  const processedContent = await remark()
+    .use(remarkRehype)
+    .use(rehypeHighlight)
+    .use(rehypeStringify)
+    .process(post.content);
   const contentHtml = processedContent.toString();
 
   const jsonLd = {
