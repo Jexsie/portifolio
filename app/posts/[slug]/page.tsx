@@ -40,6 +40,13 @@ export async function generateMetadata({
       publishedTime: post.date,
       authors: ["Jessy Ssebuliba"],
       tags: post.tags,
+      siteName: "Jessy Ssebuliba",
+    },
+    twitter: {
+      card: "summary",
+      title: post.title,
+      description: post.description,
+      creator: "@amjexsie",
     },
   };
 }

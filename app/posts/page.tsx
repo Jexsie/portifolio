@@ -15,6 +15,14 @@ export const metadata: Metadata = {
       "Articles and thoughts on frontend development, Web3 engineering, and building decentralized applications.",
     url: "https://jexsie.com/posts",
     type: "website",
+    siteName: "Jessy Ssebuliba",
+  },
+  twitter: {
+    card: "summary",
+    title: "Posts — Jessy Ssebuliba",
+    description:
+      "Articles and thoughts on frontend development, Web3 engineering, and building decentralized applications.",
+    creator: "@amjexsie",
   },
 };
 
