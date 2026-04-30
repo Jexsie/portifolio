@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import ExternalScripts from "./ExternalScripts";
+import ThemeToggle from "./components/ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Jessy Ssebuliba - Frontend Developer & Web3 Engineer",
@@ -51,12 +52,14 @@ export default function RootLayout({
     <html lang="en" className="no-js ss-preload" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
+        <script src="/js/theme-init.js" />
         <link rel="stylesheet" href="/css/vendor.css" />
         <link rel="stylesheet" href="/css/styles.css" />
         <link rel="stylesheet" href="/css/hljs-theme.css" />
       </head>
       <body id="top" suppressHydrationWarning>
         {children}
+        <ThemeToggle />
         <ExternalScripts />
       </body>
     </html>
