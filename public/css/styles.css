@@ -4498,6 +4498,14 @@ img.u-pull-left {
   color: var(--color-text-light);
 }
 
+.post-content__body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: var(--vspace-1) auto;
+  border-radius: var(--border-radius);
+}
+
 /* posts responsive */
 @media screen and (max-width: 800px) {
   .s-posts,

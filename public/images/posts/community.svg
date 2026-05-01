@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+  <rect width="600" height="300" rx="12" fill="#1a1b1e"/>
+  <!-- People circles connected -->
+  <circle cx="200" cy="130" r="25" fill="none" stroke="#c792ea" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="200" cy="130" r="8" fill="#c792ea" opacity="0.3"/>
+  <circle cx="300" cy="100" r="25" fill="none" stroke="#eabe7c" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="300" cy="100" r="8" fill="#eabe7c" opacity="0.3"/>
+  <circle cx="400" cy="130" r="25" fill="none" stroke="#82aaff" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="400" cy="130" r="8" fill="#82aaff" opacity="0.3"/>
+  <circle cx="250" cy="200" r="25" fill="none" stroke="#c3e88d" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="250" cy="200" r="8" fill="#c3e88d" opacity="0.3"/>
+  <circle cx="350" cy="200" r="25" fill="none" stroke="#f78c6c" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="350" cy="200" r="8" fill="#f78c6c" opacity="0.3"/>
+  <!-- Connection lines -->
+  <line x1="220" y1="118" x2="278" y2="108" stroke="#697098" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="322" y1="108" x2="380" y2="118" stroke="#697098" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="210" y1="152" x2="238" y2="180" stroke="#697098" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="390" y1="152" x2="362" y2="180" stroke="#697098" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="272" y1="195" x2="328" y2="195" stroke="#697098" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="290" y1="122" x2="260" y2="180" stroke="#697098" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="310" y1="122" x2="340" y2="180" stroke="#697098" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- GitHub icon simplified -->
+  <circle cx="100" cy="80" r="16" fill="none" stroke="#a1a1a2" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="92" y="86" font-family="monospace" font-size="14" fill="#a1a1a2" opacity="0.4">G</text>
+  <!-- Discord simplified -->
+  <circle cx="500" cy="80" r="16" fill="none" stroke="#a1a1a2" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="492" y="86" font-family="monospace" font-size="14" fill="#a1a1a2" opacity="0.4">D</text>
+  <!-- Label -->
+  <text x="195" y="270" font-family="sans-serif" font-size="14" fill="#a1a1a2" letter-spacing="3">LEARN TOGETHER</text>
+</svg>

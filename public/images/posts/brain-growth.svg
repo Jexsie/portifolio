@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+  <rect width="600" height="300" rx="12" fill="#1a1b1e"/>
+  <!-- Brain outline -->
+  <path d="M260 200 C220 200 190 175 190 145 C190 125 200 110 215 100 C210 85 220 65 240 60 C250 45 270 38 290 40 C310 38 330 45 340 60 C360 65 370 85 365 100 C380 110 390 125 390 145 C390 175 360 200 320 200" stroke="#eabe7c" stroke-width="2" fill="none" stroke-opacity="0.6"/>
+  <!-- Gears inside brain -->
+  <circle cx="280" cy="110" r="20" stroke="#82aaff" stroke-width="1.5" fill="none" stroke-opacity="0.5"/>
+  <circle cx="310" cy="140" r="15" stroke="#c792ea" stroke-width="1.5" fill="none" stroke-opacity="0.5"/>
+  <circle cx="265" cy="150" r="12" stroke="#c3e88d" stroke-width="1.5" fill="none" stroke-opacity="0.5"/>
+  <!-- Connection dots -->
+  <circle cx="280" cy="110" r="3" fill="#82aaff" opacity="0.8"/>
+  <circle cx="310" cy="140" r="3" fill="#c792ea" opacity="0.8"/>
+  <circle cx="265" cy="150" r="3" fill="#c3e88d" opacity="0.8"/>
+  <!-- Lightbulb above -->
+  <path d="M288 55 L288 30" stroke="#eabe7c" stroke-width="1.5" stroke-opacity="0.4"/>
+  <circle cx="288" cy="24" r="8" fill="#eabe7c" opacity="0.3"/>
+  <circle cx="288" cy="24" r="4" fill="#eabe7c" opacity="0.6"/>
+  <!-- Question marks floating -->
+  <text x="200" y="80" font-family="serif" font-size="24" fill="#eabe7c" opacity="0.3">?</text>
+  <text x="370" y="90" font-family="serif" font-size="18" fill="#eabe7c" opacity="0.25">?</text>
+  <text x="160" y="140" font-family="serif" font-size="20" fill="#eabe7c" opacity="0.2">?</text>
+  <!-- Exclamation (eureka) -->
+  <text x="395" y="130" font-family="serif" font-size="22" fill="#c3e88d" opacity="0.4">!</text>
+  <!-- Label -->
+  <text x="220" y="240" font-family="sans-serif" font-size="14" fill="#a1a1a2" letter-spacing="3">CONFUSION → GROWTH</text>
+</svg>
