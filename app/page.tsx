@@ -90,16 +90,40 @@ export default function Home() {
 
               <ul className="intro-social">
                 <li>
-                  <a href="https://github.com/jexsie">GitHub</a>
+                  <a
+                    href="https://github.com/jexsie"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/amjexsie">Twitter</a>
+                  <a
+                    href="https://twitter.com/amjexsie"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Twitter
+                  </a>
                 </li>
                 <li>
-                  <a href="https://linkedin.com/in/ssebuliba">LinkedIn</a>
+                  <a
+                    href="https://linkedin.com/in/jexsie"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>
                 </li>
                 <li>
-                  <a href="https://instagram.com/amjexsie">Instagram</a>
+                  <a
+                    href="https://instagram.com/amjexsie"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
                 </li>
               </ul>
             </div>
@@ -279,16 +303,40 @@ export default function Home() {
                 <h3 className="text-pretitle">Social</h3>
                 <ul className="contact-social">
                   <li>
-                    <a href="https://github.com/jexsie">GitHub</a>
+                    <a
+                      href="https://github.com/jexsie"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
                   </li>
                   <li>
-                    <a href="https://linkedin.com/in/jexsie">LinkedIn</a>
+                    <a
+                      href="https://linkedin.com/in/jexsie"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LinkedIn
+                    </a>
                   </li>
                   <li>
-                    <a href="https://x.com/amjexsie">X</a>
+                    <a
+                      href="https://x.com/amjexsie"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      X
+                    </a>
                   </li>
                   <li>
-                    <a href="https://instagram.com/amjexsie">Instagram</a>
+                    <a
+                      href="https://instagram.com/amjexsie"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Instagram
+                    </a>
                   </li>
                 </ul>
               </div>

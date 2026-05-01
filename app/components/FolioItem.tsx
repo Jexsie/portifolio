@@ -53,6 +53,8 @@ export default function FolioItem({ project }: { project: WorkProject }) {
         className="folio-list__proj-link"
         href={project.projectUrl}
         title="project link"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <ArrowIcon />
       </a>
@@ -76,7 +78,12 @@ export function FolioModal({ project }: { project: WorkProject }) {
           </ul>
         </div>
 
-        <a href={project.modal.linkUrl} className="modal-popup__details">
+        <a
+          href={project.modal.linkUrl}
+          className="modal-popup__details"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Project link
         </a>
       </div>

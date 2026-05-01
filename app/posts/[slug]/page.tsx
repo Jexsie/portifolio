@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import rehypeHighlight from "rehype-highlight";
+import rehypeExternalLinks from "rehype-external-links";
 import rehypeStringify from "rehype-stringify";
 import { getPostBySlug, getAllPostSlugs } from "@/lib/posts";
 
@@ -61,6 +62,10 @@ export default async function PostPage({ params }: PostPageProps) {
 
   const processedContent = await remark()
     .use(remarkRehype)
+    .use(rehypeExternalLinks, {
+      target: "_blank",
+      rel: ["noopener", "noreferrer"],
+    })
     .use(rehypeHighlight)
     .use(rehypeStringify)
     .process(post.content);
