@@ -164,16 +164,15 @@ export default function Home() {
                     About
                   </h2>
                   <p className="attention-getter" data-animate-el>
-                    I am Jessie Ssebuliba, a Certified Hedera Developer and
-                    passionate Web3 engineer with over three years of experience
-                    building applications across Web2 and Web3. I work with
-                    React, Next.js, Vue, and Tailwind CSS on the frontend, with
-                    basic knowledge of Spring Boot on the backend. My experience
-                    spans healthcare technology, decentralized asset
-                    tokenization, and NFT interoperability, with notable
-                    contributions to OpenMRS as a two-time Google Summer of Code
-                    developer and to Eclipse Adoptium, and I am currently
-                    focused on Hiero ledger solutions.
+                   Certified Hedera Developer. Web3 engineer. Open-source contributor.
+
+I'm Jessy Ssebuliba, and for the past three years I've been building at the intersection of blockchain engineering and open source software. My work spans decentralized asset tokenization, NFT interoperability, and healthcare technology — with notable contributions to OpenMRS and the Eclipse Adoptium.
+
+I'm currently focused on Hiero ledger solutions, building tools that make distributed ledger technology more accessible and interoperable. 
+
+I believe open source is how meaningful technology gets built — through transparency, collaboration, and a long-term commitment to the communities you serve.
+
+Happy to connect with you 👋!
                   </p>
                   <a
                     href="/jessy-ssebuliba-resume.pdf"
