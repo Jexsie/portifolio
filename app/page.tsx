@@ -164,15 +164,12 @@ export default function Home() {
                     About
                   </h2>
                   <p className="attention-getter" data-animate-el>
-                   Certified Hedera Developer. Web3 engineer. Open-source contributor.
-
-I'm Jessy Ssebuliba, and for the past three years I've been building at the intersection of blockchain engineering and open source software. My work spans decentralized asset tokenization, NFT interoperability, and healthcare technology — with notable contributions to OpenMRS and the Eclipse Adoptium.
-
-I'm currently focused on Hiero ledger solutions, building tools that make distributed ledger technology more accessible and interoperable. 
-
-I believe open source is how meaningful technology gets built — through transparency, collaboration, and a long-term commitment to the communities you serve.
-
-Happy to connect with you 👋!
+                   <strong>Certified Hedera Developer. Web3 engineer. Open-source contributor.<strong/> <br/>
+                     I'm Jessy Ssebuliba, an open source developer based in Kampala, Uganda. I'm an active contributor and maintainer at 
+                     Hiero ledger, and I've been building across the open source world through OpenMRS, Eclipse Adoptium, and Open Data Ensemble.
+                     I'm a member of Support and Care Africa, which provides support for the open source community, and a Hedera advocate. 
+                     I focus on blockchain systems, applied cryptography, and zero-knowledge proofs and my work neatly revolves around those! <br/>
+                     Let's connect 👋
                   </p>
                   <a
                     href="/jessy-ssebuliba-resume.pdf"
