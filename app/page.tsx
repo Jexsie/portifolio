@@ -172,7 +172,7 @@ export default function Home() {
                      Let's connect 👋
                   </p>
                   <a
-                    href="/jessy-ssebuliba-resume.pdf"
+                    href="/jessy-ssebuliba-cv.pdf"
                     download
                     className="btn btn--medium u-fullwidth"
                     data-animate-el
