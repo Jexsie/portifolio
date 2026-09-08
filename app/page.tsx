@@ -164,7 +164,7 @@ export default function Home() {
                     About
                   </h2>
                   <p className="attention-getter" data-animate-el>
-                   <strong>Certified Hedera Developer. Web3 engineer. Open-source contributor.<strong/> <br/>
+                   <strong>Certified Hedera Developer. Web3 engineer. Open-source contributor.</strong> <br/>
                      I'm Jessy Ssebuliba, an open source developer based in Kampala, Uganda. I'm an active contributor and maintainer at 
                      Hiero ledger, and I've been building across the open source world through OpenMRS, Eclipse Adoptium, and Open Data Ensemble.
                      I'm a member of Support and Care Africa, which provides support for the open source community, and a Hedera advocate. 
