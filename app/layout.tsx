@@ -1,11 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import ExternalScripts from "./ExternalScripts";
-import ThemeToggle from "./components/ThemeToggle";
 
 export const metadata: Metadata = {
-  title: "Jessy Ssebuliba - Frontend Developer & Web3 Engineer",
+  title: "Jessy Ssebuliba - Software Engineer & Open Source Developer",
   description:
-    "Frontend developer and Web3 engineer based in Uganda, building decentralized applications with React, Next.js, and Hedera.",
+    "Software engineer and open source developer based in Uganda, building decentralized applications with React, Next.js, and Hedera.",
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -18,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://jexsie.com/",
   },
   openGraph: {
-    title: "Jessy Ssebuliba - Frontend Developer & Web3 Engineer",
+    title: "Jessy Ssebuliba - Software Engineer & Open Source Developer",
     description:
-      "Frontend developer and Web3 engineer based in Uganda, building decentralized applications with React, Next.js, and Hedera.",
+      "Software engineer and open source developer based in Uganda, building decentralized applications with React, Next.js, and Hedera.",
     url: "https://jexsie.com",
     siteName: "Jessy Ssebuliba",
     locale: "en_US",
@@ -28,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jessy Ssebuliba - Frontend Developer & Web3 Engineer",
+    title: "Jessy Ssebuliba - Software Engineer & Open Source Developer",
     description:
-      "Frontend developer and Web3 engineer based in Uganda, building decentralized applications with React, Next.js, and Hedera.",
+      "Software engineer and open source developer based in Uganda, building decentralized applications with React, Next.js, and Hedera.",
     creator: "@amjexsie",
   },
   other: {
@@ -41,6 +39,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#0b0d0e",
 };
 
 export default function RootLayout({
@@ -49,19 +48,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="no-js ss-preload" suppressHydrationWarning>
+    <html lang="en">
       <head>
-        <meta charSet="utf-8" />
-        <script src="/js/theme-init.js" />
-        <link rel="stylesheet" href="/css/vendor.css" />
-        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        />
+        <link rel="stylesheet" href="/css/site.css" />
         <link rel="stylesheet" href="/css/hljs-theme.css" />
       </head>
-      <body id="top" suppressHydrationWarning>
-        {children}
-        <ThemeToggle />
-        <ExternalScripts />
-      </body>
+      <body id="top">{children}</body>
     </html>
   );
 }

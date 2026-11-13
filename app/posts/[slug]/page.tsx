@@ -7,6 +7,10 @@ import rehypeHighlight from "rehype-highlight";
 import rehypeExternalLinks from "rehype-external-links";
 import rehypeStringify from "rehype-stringify";
 import { getPostBySlug, getAllPostSlugs } from "@/lib/posts";
+import { formatDate } from "@/lib/format";
+import { ArrowLeft } from "../../components/Icons";
+import SiteFooter from "../../components/SiteFooter";
+import SiteHeader from "../../components/SiteHeader";
 
 interface PostPageProps {
   params: Promise<{ slug: string }>;
@@ -86,99 +90,56 @@ export default async function PostPage({ params }: PostPageProps) {
   };
 
   return (
-    <div className="s-pagewrap">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <header className="s-header">
-        <div className="header-mobile">
-          <span className="mobile-home-link">
-            <a href="/">JEXSIE.</a>
-          </span>
-          <a className="mobile-menu-toggle" href="#0">
-            <span>Menu</span>
-          </a>
-        </div>
+      <SiteHeader current="posts" />
 
-        <div className="row wide main-nav-wrap">
-          <nav className="column lg-12 main-nav">
-            <ul>
-              <li>
-                <a href="/" className="home-link">
-                  JEXSIE.
-                </a>
-              </li>
-              <li>
-                <a href="/#about">About</a>
-              </li>
-              <li>
-                <a href="/#works">Works</a>
-              </li>
-              <li className="current">
-                <a href="/posts">Posts</a>
-              </li>
-              <li>
-                <a href="/#contact">Say Hello</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      <main className="s-content">
-        <article className="s-post">
-          <div className="row post-header">
-            <div className="column lg-12">
-              <Link href="/posts" className="post-back">
-                ← All Posts
+      <main id="main">
+        <article>
+          <div className="container section__inner page-intro">
+            <div className="section__label section__label--stack">
+              <span>
+                <span className="accent">0.0.8</span> / Post
+              </span>
+              <Link href="/posts" className="link-arrow link-arrow--caps">
+                <ArrowLeft />
+                All posts
               </Link>
-              <time className="post-date" dateTime={post.date}>
-                {new Date(post.date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </time>
-              <h1 className="post-title">{post.title}</h1>
-              <div className="post-tags">
-                {post.tags.map((tag) => (
-                  <span key={tag} className="post-tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
             </div>
+            <header className="section__body section__body--tight">
+              <time className="post-card__date" dateTime={post.date}>
+                {formatDate(post.date)}
+              </time>
+              <h1 className="display-xl">{post.title}</h1>
+              {post.tags.length > 0 && (
+                <ul className="tags">
+                  {post.tags.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
+              )}
+            </header>
           </div>
 
-          <div className="row post-content">
-            <div className="column lg-10 md-12 post-content__body">
-              <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <div className="section">
+            <div className="container section__inner">
+              <div className="section__label" aria-hidden="true" />
+              <div className="section__body">
+                <div
+                  className="post-body"
+                  dangerouslySetInnerHTML={{ __html: contentHtml }}
+                />
+              </div>
             </div>
           </div>
         </article>
       </main>
 
-      <footer className="s-footer">
-        <div className="row">
-          <div className="column ss-copyright">
-            <span>© Copyright Jessy Ssebuliba {new Date().getFullYear()}</span>
-          </div>
-          <div className="ss-go-top">
-            <a title="Back to Top" href="#top">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fillRule="evenodd"
-                clipRule="evenodd"
-              >
-                <path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <SiteFooter home={false} />
+    </>
   );
 }

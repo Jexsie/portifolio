@@ -1,64 +1,31 @@
-"use client";
-
-import { useEffect } from "react";
 import Link from "next/link";
+import SiteFooter from "./components/SiteFooter";
+import SiteHeader from "./components/SiteHeader";
 
 export default function NotFound() {
-  useEffect(() => {
-    document.documentElement.classList.remove("ss-preload");
-    document.documentElement.classList.add("ss-loaded");
-  }, []);
-
   return (
-    <div className="s-pagewrap">
-      <header className="s-header">
-        <div className="header-mobile">
-          <span className="mobile-home-link">
-            <a href="/">JEXSIE.</a>
-          </span>
-        </div>
+    <>
+      <SiteHeader current="" />
 
-        <div className="row wide main-nav-wrap">
-          <nav className="column lg-12 main-nav">
-            <ul>
-              <li>
-                <a href="/" className="home-link">
-                  JEXSIE.
-                </a>
-              </li>
-              <li>
-                <a href="/#about">About</a>
-              </li>
-              <li>
-                <a href="/#works">Works</a>
-              </li>
-              <li>
-                <a href="/posts">Posts</a>
-              </li>
-              <li>
-                <a href="/#contact">Say Hello</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      <main className="s-content">
-        <section className="s-404">
-          <div className="row">
-            <div className="column lg-12 s-404__content">
-              <div className="s-404__big">404</div>
-              <h1 className="s-404__title">Page Not Found</h1>
-              <p className="s-404__desc">
-                The page you&apos;re looking for doesn&apos;t exist or has been
-                moved.
-              </p>
-              <div className="s-404__actions">
-                <Link href="/" className="btn btn--medium">
-                  Back to Home
+      <main id="main">
+        <section>
+          <div className="container section__inner page-intro">
+            <p className="section__label page-intro__label">
+              <span>
+                <span className="accent">404</span> / Not found
+              </span>
+            </p>
+            <div className="section__body section__body--tight">
+              <h1 className="display-xl">
+                This page doesn&apos;t exist{" "}
+                <span className="faint">or has moved.</span>
+              </h1>
+              <div className="btn-row btn-row--tight">
+                <Link href="/" className="btn btn--primary">
+                  Back to home
                 </Link>
-                <Link href="/posts" className="btn btn--medium btn--stroke">
-                  Read Posts
+                <Link href="/posts" className="btn">
+                  Read posts
                 </Link>
               </div>
             </div>
@@ -66,13 +33,7 @@ export default function NotFound() {
         </section>
       </main>
 
-      <footer className="s-footer">
-        <div className="row">
-          <div className="column ss-copyright">
-            <span>© Copyright Jessy Ssebuliba {new Date().getFullYear()}</span>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <SiteFooter home={false} />
+    </>
   );
 }
