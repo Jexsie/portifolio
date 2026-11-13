@@ -1,7 +1,7 @@
 /* highlight.js custom theme — dark, matching site palette */
 .hljs {
-  background: var(--color-gray-12);
-  color: var(--color-gray-1);
+  background: transparent;
+  color: var(--text-code);
 }
 
 .hljs-keyword,
@@ -48,7 +48,7 @@
 
 .hljs-meta,
 .hljs-meta .hljs-keyword {
-  color: var(--color-1);
+  color: var(--accent);
 }
 
 .hljs-symbol,

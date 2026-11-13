@@ -1,6 +1,11 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
+import { formatDate } from "@/lib/format";
+import { ArrowRight, ArrowUpRight } from "../components/Icons";
+import SiteFooter from "../components/SiteFooter";
+import SiteHeader from "../components/SiteHeader";
+import { EMAIL } from "../data/site";
 
 export const metadata: Metadata = {
   title: "Posts — Jessy Ssebuliba",
@@ -30,110 +35,77 @@ export default function PostsPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="s-pagewrap">
-      <header className="s-header">
-        <div className="header-mobile">
-          <span className="mobile-home-link">
-            <a href="/">JEXSIE.</a>
-          </span>
-          <a className="mobile-menu-toggle" href="#0">
-            <span>Menu</span>
-          </a>
-        </div>
+    <>
+      <SiteHeader current="posts" />
 
-        <div className="row wide main-nav-wrap">
-          <nav className="column lg-12 main-nav">
-            <ul>
-              <li>
-                <a href="/" className="home-link">
-                  JEXSIE.
-                </a>
-              </li>
-              <li>
-                <a href="/#about">About</a>
-              </li>
-              <li>
-                <a href="/#works">Works</a>
-              </li>
-              <li className="current">
-                <a href="/posts">Posts</a>
-              </li>
-              <li>
-                <a href="/#contact">Say Hello</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      <main className="s-content">
-        <section className="s-posts">
-          <div className="row posts-header">
-            <div className="column lg-12">
-              <h2 className="text-pretitle with-line">Blog</h2>
-              <p className="h1">Posts &amp; Articles</p>
-              <p className="posts-lead">
+      <main id="main">
+        <section>
+          <div className="container section__inner page-intro">
+            <p className="section__label page-intro__label">
+              <span>
+                <span className="accent">0.0.8</span> / Blog
+              </span>
+            </p>
+            <div className="section__body section__body--tight">
+              <h1 className="display-xl">Posts &amp; articles.</h1>
+              <p className="lead">
                 Thoughts on frontend development, Web3 engineering, and building
                 for the decentralized web.
               </p>
             </div>
           </div>
+        </section>
 
-          <div className="row">
-            <div className="column lg-12">
-              <ul className="posts-list">
-                {posts.map((post) => (
-                  <li key={post.slug} className="posts-list__item">
-                    <Link
-                      href={`/posts/${post.slug}`}
-                      className="posts-list__link"
-                    >
-                      <article>
-                        <time className="posts-list__date" dateTime={post.date}>
-                          {new Date(post.date).toLocaleDateString("en-US", {
-                            year: "numeric",
-                            month: "long",
-                            day: "numeric",
-                          })}
-                        </time>
-                        <h3 className="posts-list__title">{post.title}</h3>
-                        <p className="posts-list__desc">{post.description}</p>
-                        <div className="posts-list__tags">
-                          {post.tags.map((tag) => (
-                            <span key={tag} className="posts-list__tag">
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      </article>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+        <section aria-label="All posts" className="section">
+          <div className="container section__inner">
+            <p className="section__label muted">
+              {posts.length} {posts.length === 1 ? "post" : "posts"}
+            </p>
+            <div className="post-list">
+              {posts.map((post) => (
+                <article key={post.slug} className="card post-card">
+                  <time className="post-card__date" dateTime={post.date}>
+                    {formatDate(post.date)}
+                  </time>
+                  <h2>
+                    <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+                  </h2>
+                  <p>{post.description}</p>
+                  {post.tags.length > 0 && (
+                    <ul className="tags">
+                      {post.tags.map((tag) => (
+                        <li key={tag}>{tag}</li>
+                      ))}
+                    </ul>
+                  )}
+                  <Link
+                    href={`/posts/${post.slug}`}
+                    className="link-arrow link-arrow--caps"
+                    aria-label={`Read the post: ${post.title}`}
+                  >
+                    Read the post
+                    <ArrowRight />
+                  </Link>
+                </article>
+              ))}
             </div>
+          </div>
+        </section>
+
+        <section aria-label="Contact" className="section cta-band">
+          <div className="container cta-band__inner">
+            <p className="about__headline">
+              Have a question, or just want to chat about web3?
+            </p>
+            <a href={`mailto:${EMAIL}`} className="btn btn--primary">
+              Say hello
+              <ArrowUpRight />
+            </a>
           </div>
         </section>
       </main>
 
-      <footer className="s-footer">
-        <div className="row">
-          <div className="column ss-copyright">
-            <span>© Copyright Jessy Ssebuliba {new Date().getFullYear()}</span>
-          </div>
-          <div className="ss-go-top">
-            <a title="Back to Top" href="#top">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fillRule="evenodd"
-                clipRule="evenodd"
-              >
-                <path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <SiteFooter home={false} />
+    </>
   );
 }
